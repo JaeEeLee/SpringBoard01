@@ -21,7 +21,10 @@
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
 	
+	<!-- 각각의 어노테이션은 본래 @Component.. 어노테이션의 특성에 맞게 스캔해줌 -->
 	<context:component-scan base-package="com.jaei.controller" />
+	<context:component-scan base-package="com.jaei.service" />
+	<context:component-scan base-package="com.jaei.dao" />
 	
 	
 	
